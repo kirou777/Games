@@ -1,6 +1,3 @@
-# Games
- Some games:
-
 # Snake Game (C++ Console)
 
 A simple Snake game implemented in C++ using the Windows console. The project demonstrates basic game loop structure, real-time input handling, and simple rendering in a terminal environment.
