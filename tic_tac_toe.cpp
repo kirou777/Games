@@ -51,13 +51,9 @@ przeliczanie:
  - uwaga: tablica zaczyna siê od 0, a slot od 1
 */
 int placeMarker(int slot) {
-	int row = slot / 3, col;
-	
-	// specjalny przypadek dla liczb podzielnych przez 3
-	if(slot % 3 == 0) {
-		row -= 1;
-		col = 2;
-	} else col = slot % 3 - 1;
+	// znalezienia pola na planszy
+	int row = (slot - 1) / 3;
+	int col = (slot - 1) % 3;
 	
 	// umieszczenie symbolu na planszy (jeœli jest wolne)
 	if(board[row][col] != 'X' && board[row][col] != 'O') {
